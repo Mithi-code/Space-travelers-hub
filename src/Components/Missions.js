@@ -7,7 +7,9 @@ const Missions = () => {
   const data = useSelector((state) => state.missionsReducer.missions);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMissionsData());
+    if (!data.length) {
+      dispatch(getMissionsData());
+    }
   }, []);
 
   return (
