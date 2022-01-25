@@ -31,9 +31,9 @@ const Missions = () => {
               {item.description}
             </td>
             <td className=" border-solid border-2 border-gray-200">
-              <button className=" w-32 bg-gray-500 text-white font-bold m-3 rounded" type="button">
+              <p className=" w-32 bg-gray-500 text-white font-bold m-3 rounded">
                 NOT A MEMBER
-              </button>
+              </p>
             </td>
             <td>
               <button className=" w-32 p-2 border-solid border-2 border-black m-3 rounded" type="button">
