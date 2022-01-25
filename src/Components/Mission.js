@@ -5,7 +5,7 @@ import { joinMission, leaveMission } from '../Redux/Missions/Missions';
 
 const Mission = ({
   mission: {
-    mission_id, mission_name, description, reserved = false,
+    mission_id, mission_name, description, reserved,
   },
 }) => {
   const dispatch = useDispatch();
