@@ -11,7 +11,6 @@ function App() {
         <Route exact element={<Rockets />} path="/rockets" />
         <Route exact element={<Missions />} path="/missions" />
       </Routes>
-      <h1 className="text-3xl font-bold underline text-red-500">Hello world</h1>
     </div>
   );
 }
