@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import planet from '../Assets/planet.png';
 
 const navigation = [
-  { name: 'Rockets', href: '/' },
+  { name: 'Rockets', href: '/rockets' },
   { name: 'Missions', href: '/missions' },
   { name: 'My profile', href: '/myprofile' },
 ];
