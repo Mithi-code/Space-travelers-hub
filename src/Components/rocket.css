@@ -1,21 +1,21 @@
 img {
-    width: 300px;
-    height: 200px;
-    padding: 10px;
-  }
-  
-  .details {
-    margin: 10px;
-  }
-  
-  .container {
-    padding: 30px;
-  }
-  
-  h1 {
-    font-weight: bold;
-  }
-  
-  p{
-    margin: 20px 0px; 
-  }
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+}
+
+.details {
+  margin: 10px;
+}
+
+.container {
+  padding: 30px;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+p {
+  margin: 20px 0;
+}
