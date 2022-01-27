@@ -43,6 +43,7 @@ const Mission = ({
           </td>
           <td>
             <button
+              data-testid={mission_id}
               onClick={() => dispatch(joinMission(mission_id))}
               className=" w-32 p-2 border-solid border-2 border-black m-3 rounded"
               type="button"
