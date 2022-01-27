@@ -14,7 +14,7 @@ const Rockets = () => {
     dispatch(cancelRocket(id));
   };
   useEffect(() => {
-    if (!data.legth) {
+    if (!data.length) {
       dispatch(getRocketsData());
     }
   }, []);
