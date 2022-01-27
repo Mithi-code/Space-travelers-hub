@@ -44,7 +44,27 @@ describe('Header checking...', () => {
     );
     const myProfileBtn = screen.getByRole('link', { name: /my profile/i });
     fireEvent.click(myProfileBtn);
-    const profileHeading = screen.getByRole('heading', { name: /my missions/i });
+    const profileHeading = screen.getByRole('heading', {
+      name: /my missions/i,
+    });
     expect(profileHeading).toBeInTheDocument();
+  });
+  test('should render and go to Rockets page', async () => {
+    render(
+      <Provider store={store}>
+        <BrowserRouter>
+          <Header />
+          <Routes>
+            <Route exact element={<Rockets />} path="/" />
+            <Route exact element={<Missions />} path="/missions" />
+            <Route exact element={<MyProfile />} path="/myprofile" />
+          </Routes>
+        </BrowserRouter>
+      </Provider>,
+    );
+    const rocketsLinkBtn = screen.getByRole('link', { name: /rockets/i });
+    fireEvent.click(rocketsLinkBtn);
+    const RocketName = await waitFor(() => screen.getByText('Falcon 1'));
+    expect(RocketName).toBeInTheDocument();
   });
 });
