@@ -33,7 +33,7 @@ const Rockets = () => {
             </p>
             {
               !e.reserved ? (
-                <button type="button" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => { handleClickReserve(e.rocket_id); }}>
+                <button data-testid={e.rocket_id} type="button" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => { handleClickReserve(e.rocket_id); }}>
                   Reserve Rocket
                 </button>
               ) : (
