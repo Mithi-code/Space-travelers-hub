@@ -19,3 +19,11 @@ h1 {
 p {
   margin: 20px 0;
 }
+
+span {
+  background-color: teal;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+  color: #fff;
+}
