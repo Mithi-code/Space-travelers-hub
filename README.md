@@ -17,6 +17,11 @@
 - Tailwind css
 - Axios
 
+## Live demo
+
+[Live demo](https://space-travelers-hub-project.herokuapp.com/)
+
+
 ## Getting Started
 ## To run the website locally follow the following steps:
 
